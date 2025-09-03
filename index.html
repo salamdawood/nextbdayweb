@@ -3,7 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NextBday: Birthday Reminders</title>
+  <title>Birthday Reminder App | NextBday – Never Miss a Birthday Again</title>
+  <meta name="description" content="NextBday is a simple, free, private birthday reminder app. Import birthdays from contacts, get 1–7 day reminders, and never miss a birthday again.">
+  <meta name="keywords" content="birthday reminders, birthday reminder app, birthday calendar, birthday notification app, birthday alerts, birthday tracker">
+
+  <!-- Schema.org App Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "NextBday: Birthday Reminders",
+    "operatingSystem": "iOS",
+    "applicationCategory": "UtilitiesApplication",
+    "description": "A free, private birthday reminder app that keeps you on top of birthdays with notifications.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "url": "https://apps.apple.com/us/app/nextbday-birthday-reminders/id6751151244"
+  }
+  </script>
+
   <style>
     * {
       box-sizing: border-box;
@@ -67,32 +88,34 @@
       display: flex;
       flex-direction: column;
       gap: 1rem;
-    }
-
-    .form-box input {
-      padding: 0.75rem;
-      border: 1px solid #ccc;
-      border-radius: 6px;
       font-size: 1rem;
     }
 
-    .form-box button,
-    .form-box a.button {
-      background-color: #1e2a38;
-      color: #fff;
-      border: none;
-      padding: 0.75rem;
-      border-radius: 6px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background 0.3s ease;
-      text-align: center;
+    .form-box a {
+      color: #1e2a38;
       text-decoration: none;
+      font-weight: bold;
     }
 
-    .form-box button:hover,
-    .form-box a.button:hover {
-      background-color: #2c3e50;
+    .form-box a:hover {
+      color: #2c3e50;
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    footer a {
+      color: #1e2a38;
+      text-decoration: none;
+      border-bottom: 1px solid #1e2a38;
+    }
+
+    footer a:hover {
+      color: #2c3e50;
+      border-color: #2c3e50;
     }
 
     @media screen and (max-width: 768px) {
@@ -114,11 +137,18 @@
 <body>
   <div class="container">
     <div class="left-column">
-      <h1>NextBday: Birthday Reminders</h1>
+      <h1>Best Birthday Reminder App – NextBday</h1>
       <p class="intro">
         NextBday makes birthdays effortless. Import dates from Contacts in one tap, 
         pick a daily reminder time, and get an optional heads-up 1–7 days before—
         so you’re always on time with a message or gift.
+      </p>
+
+      <p>
+        👉 Download the app now: 
+        <a href="https://apps.apple.com/us/app/nextbday-birthday-reminders/id6751151244" target="_blank" rel="noopener">
+          NextBday – Birthday Reminder App on the App Store
+        </a>
       </p>
 
       <h3>Why people love it</h3>
@@ -145,18 +175,21 @@
       </ul>
     </div>
 
+    <!-- Contact/Support section -->
     <div class="right-column">
       <div class="phone-frame">
         <div class="form-box">
-          <p>Contact/Support: <a href="mailto:salamd135@gmail.com">Send us an email</a></p>
+          <p>📩 Contact/Support:<br>
+            <a href="mailto:salamd135@gmail.com">Send us an email</a>
+          </p>
         </div>
       </div>
     </div>
   </div>
-  <footer style="margin-top: 2rem; text-align: center;">
-    <a href="privacy.html" style="color:#1e2a38; text-decoration:none; border-bottom:1px solid #1e2a38;">
-      Privacy Policy
-    </a>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a> | 
+    <a href="terms.html">Terms of Service</a>
   </footer>
 </body>
 </html>
